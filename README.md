@@ -1,4 +1,6 @@
-creates inverted index for html files and performs a query
+~Documents Search Experment~
+
+creates inverted index for many html files then performs a query
 
 How to run this experiment:
 
