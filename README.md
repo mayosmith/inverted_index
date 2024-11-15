@@ -1,4 +1,4 @@
-~Documents Search Experment~
+===Documents Search Experment===
 
 creates inverted index for many html files then performs a query
 
