@@ -24,17 +24,17 @@ def strip_html_tags(html):
 # Function to build documents from HTML files
 def build_documents():
     documents = {}
-    for i in range(1, 25):
-        filename = f"rp-{i}.html"
+    for filename in os.listdir('docs'):
+        if filename.endswith('.html'):
         
-        try:
-            with open(filename, 'r', encoding='utf-8') as file:
-                html_content = file.read()
+            try:
+                with open(os.path.join('docs', filename), 'r', encoding='utf-8') as file:
+                    html_content = file.read()
                 text = strip_html_tags(html_content)
                 documents[filename] = text  # Use filename as key and stripped text as value
                 
-        except FileNotFoundError:
-            print(f"Warning: {filename} not found")
+            except FileNotFoundError:
+                print(f"Warning: {os.path.join('docs', filename)} not found")
     
     return documents
 
