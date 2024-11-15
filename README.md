@@ -6,7 +6,7 @@ STEP 1: Copy 'inverted_array.py' into a root folder (example "mytestfolder")
 
 STEP 2: Create two subdirectories: '/docs' and '/js'
 
-STEP 3: Drop a bunch of .html files in the /docs sub-directory
+STEP 3: Drop a bunch of .html files in the /docs subdirectory
 
 STEP 4: run program in terminal (python3 inverted_array.py)
 
